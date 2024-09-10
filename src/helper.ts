@@ -2,7 +2,7 @@ function get_id(id: string) {
    return document.getElementById(id);
 }
 
-function get_query_select(what: string) {
+function get_query(what: string) {
    return document.querySelector(what);
 }
 

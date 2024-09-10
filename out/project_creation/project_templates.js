@@ -10,10 +10,17 @@ var project_langs;
     project_langs[project_langs["GDScript"] = 6] = "GDScript";
 })(project_langs || (project_langs = {}));
 class project_template {
-    constructor(_name, _img_path, _desc, _langs_used) {
+    constructor(_name, _img_path, _desc, _langs_used, _date) {
         this.name = _name;
         this.img_path = _img_path;
         this.desc = _desc;
         this.langs_used = _langs_used;
+        this.date = _date;
+    }
+}
+class full_project_template {
+    constructor(_project_template, _id) {
+        this.project_template = _project_template;
+        this.id = _id;
     }
 }
