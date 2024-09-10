@@ -8,21 +8,10 @@ window.onload = function () {
          return;
       }
 
-      console.log("initialized pipeline");
+      console.log("INFO, initialized pipeline");
 
       p_line.pipeline_init();
+   } else {
+      console.error("ERROR, pipeline already initialized?");
    }
-   /*
-   if (!pipeline.ready) {
-      const ROOT = get_id("root");
-      if (!ROOT || !ROOT.parentElement) {
-         Main.error();
-      } else {
-         console.log(
-         "[=== " + "Heya, the game has loaded, dont cheat thanks." + " ===]"
-      );
-      Main.init();
-      }
-   }
-   */
 };

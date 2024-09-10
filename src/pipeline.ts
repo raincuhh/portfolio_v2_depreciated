@@ -11,7 +11,7 @@ class pipeline {
    }
 
    error() {
-      console.log("error initializing pipeline");
+      console.log("ERROR, failed initializing pipeline");
    }
 
    load_project_section() {}

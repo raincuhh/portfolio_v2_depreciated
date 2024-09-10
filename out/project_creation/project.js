@@ -17,3 +17,8 @@ function make_project_html(finished_project_template, _project_section_parent = 
     project_section_parent === null || project_section_parent === void 0 ? void 0 : project_section_parent.appendChild(proj_parent);
     // project title
 }
+function load_all_projects() {
+    for (const project of projects) {
+        make_project_html(project);
+    }
+}

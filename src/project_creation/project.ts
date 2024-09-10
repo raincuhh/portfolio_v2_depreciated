@@ -54,3 +54,9 @@ function make_project_html(
 
    // project title
 }
+
+function load_all_projects() {
+   for (const project of projects) {
+      make_project_html(project);
+   }
+}
