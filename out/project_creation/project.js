@@ -13,7 +13,7 @@ function make_project_html(finished_project_template, _project_section_parent = 
     // parent appending
     let proj_parent = create_el("div");
     proj_parent.setAttribute("class", "project");
-    proj_parent.setAttribute("id", finished_project_template.id.toString());
+    proj_parent.setAttribute("id", "project_id_" + finished_project_template.id.toString());
     project_section_parent === null || project_section_parent === void 0 ? void 0 : project_section_parent.appendChild(proj_parent);
     // project title
 }

@@ -46,7 +46,10 @@ function make_project_html(
    // parent appending
    let proj_parent: HTMLElement = create_el("div");
    proj_parent.setAttribute("class", "project");
-   proj_parent.setAttribute("id", finished_project_template.id.toString());
+   proj_parent.setAttribute(
+      "id",
+      "project_id_" + finished_project_template.id.toString()
+   );
    project_section_parent?.appendChild(proj_parent);
 
    // project title
